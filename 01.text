@@ -1,0 +1,97 @@
+root@studenj-virtual-machine:~# /dev/null
+bash: /dev/null: 허가 거부
+root@studenj-virtual-machine:~# sudo /dev/null
+sudo: /dev/null: 명령이 없습니다
+root@studenj-virtual-machine:~# /dev/null ^Z
+bash: /dev/null: 허가 거부
+root@studenj-virtual-machine:~# yes > /dev/null
+^Z
+
+
+
+
+
+
+
+
+
+
+&
+yes > /dev/nyll &
+^C
+
+^C
+root@studenj-virtual-machine:~# nanpo
+명령어 'nanpo' 을(를) 찾을 수 없습니다. 다음 명령어로 시도하시겠습니까:
+  snap nanonano의 명령어 ' (5.7+pkg-4057)'
+  deb nanonano의 명령어 ' (6.2-1)'
+'snap info <snapname>'에서 추가 버전을 확인하십시오.
+root@studenj-virtual-machine:~# nano
+root@studenj-virtual-machine:~# nano &
+[1] 3338
+root@studenj-virtual-machine:~# ~#
+~#: 명령을 찾을 수 없습니다
+
+[1]+  멈춤                  nano
+root@studenj-virtual-machine:~# fg 1
+nano
+root@studenj-virtual-machine:~# cd Downloads
+bash: cd: Downloads: 그런 파일이나 디렉터리가 없습니다
+root@studenj-virtual-machine:~# s
+s: 명령을 찾을 수 없습니다
+root@studenj-virtual-machine:~# ls
+snap  공개  다운로드  문서  바탕화면  비디오  사진  음악  템플릿
+root@studenj-virtual-machine:~# cd 다운로드
+root@studenj-virtual-machine:~/다운로드# ls
+root@studenj-virtual-machine:~/다운로드# 
+root@studenj-virtual-machine:~/다운로드# ls
+root@studenj-virtual-machine:~/다운로드# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+--2023-05-16 10:24:59--  https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dl.google.com (dl.google.com) 해석 중... 142.251.220.14, 2404:6800:4005:801::200e
+다음으로 연결 중: dl.google.com (dl.google.com)|142.251.220.14|:443... 연결했습니다.
+HTTP 요청을 보냈습니다. 응답 기다리는 중... 200 OK
+길이: 94953468 (91M) [application/x-debian-package]
+저장 위치: ‘google-chrome-stable_current_amd64.deb’
+
+google-chrome-stable_c 100%[=========================>]  90.55M  7.92MB/s    / 18s      
+
+2023-05-16 10:25:17 (5.14 MB/s) - ‘google-chrome-stable_current_amd64.deb’ 저장함 [94953468/94953468]
+
+root@studenj-virtual-machine:~/다운로드# ls
+google-chrome-stable_current_amd64.deb
+root@studenj-virtual-machine:~/다운로드# ls google
+ls: 'google'에 접근할 수 없음: 그런 파일이나 디렉터리가 없습니다
+root@studenj-virtual-machine:~/다운로드# ls google-chrome-stable_current_amd64.deb 
+google-chrome-stable_current_amd64.deb
+root@studenj-virtual-machine:~/다운로드# dpkg -i ls google-chrome-stable_current_amd64.deb 
+dpkg: 오류: cannot access archive 'ls': 그런 파일이나 디렉터리가 없습니다
+root@studenj-virtual-machine:~/다운로드# dopg -i google-chrome-stable_current_amd64.deb 
+dopg: 명령을 찾을 수 없습니다
+root@studenj-virtual-machine:~/다운로드# dpkg -i google-chrome-stable_current_amd64.deb 
+Selecting previously unselected package google-chrome-stable.
+(데이터베이스 읽는중 ...현재 205018개의 파일과 디렉터리가 설치되어 있습니다.)
+Preparing to unpack google-chrome-stable_current_amd64.deb ...
+Unpacking google-chrome-stable (113.0.5672.92-1) ...
+google-chrome-stable (113.0.5672.92-1) 설정하는 중입니다 ...
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/x-www-browser (x-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/gnome-www-browser (gnome-www-browser) in auto mode
+update-alternatives: using /usr/bin/google-chrome-stable to provide /usr/bin/google-chrome (google-chrome) in auto mode
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+Processing triggers for man-db (2.10.2-1) ...
+root@studenj-virtual-machine:~/다운로드# apt install google-chrome-stable_current_amd64.deb 
+패키지 목록을 읽는 중입니다... 완료
+의존성 트리를 만드는 중입니다... 완료
+상태 정보를 읽는 중입니다... 완료        
+E: google-chrome-stable_current_amd64.deb 패키지를 찾을 수 없습니다
+root@studenj-virtual-machine:~/다운로드# nano google-chrome-stable
+root@studenj-virtual-machine:~/다운로드# nano /usr/bin/google-chrome-stable
+root@studenj-virtual-machine:~/다운로드# google-chrom
+google-chrom: 명령을 찾을 수 없습니다
+root@studenj-virtual-machine:~/다운로드# google-chrome
+root@studenj-virtual-machine:~/다운로드# [0516/104659.015772:ERROR:nacl_helper_linux.cc(355)] NaCl helper process running without a sandbox!
+Most likely you need to configure your SUID sandbox correctly
+bg
+bash: bg: 현재: 그런 작업이 없음
+root@studenj-virtual-machine:~/다운로드# 
